@@ -2,7 +2,24 @@
 
 # Colaborar A+ <img src="icon-128.png" width=100>
 
-[TOC]
+
+
+- [Descrição](#descrição)
+- [Características](#características)
+- [Componentes Principais](#componentes-principais)
+  - [manifest.json](#manifestjson)
+  - [popup.html](#popuphtml)
+  - [content.js](#contentjs)
+  - [miniwindow.js](#miniwindowjs)
+- [Funcionamento](#funcionamento)
+- [Testando Localmente](#testando-localmente)
+  - [1. Clone o Repositório](#1-clone-o-repositório)
+  - [2. Carregar a Extensão no Chrome](#2-carregar-a-extensão-no-chrome)
+  - [3. Modificações e Testes](#3-modificações-e-testes)
+- [Contribuindo](#contribuindo)
+- [Licença](#licença)
+
+
 
 ## Descrição
 "Colaborar A+" é uma extensão do Chrome projetada para alunos da UNOPAR e ANHANGUERA, facilitando a obtenção do calendário de atividades do portal Colaborar PDA. A extensão permite aos usuários gerar relatórios detalhados de suas atividades acadêmicas, incluindo informações sobre disciplinas, somatórios de pontos no AVA, e um calendário de atividades com datas de início e término.
