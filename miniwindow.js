@@ -1,3 +1,26 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const consentModal = document.getElementById("consentModal");
+    const openFormBtn = document.getElementById("openForm");
+    const dismissBtn = document.getElementById("dismissForm");
+
+    chrome.storage.sync.get(["formDismissed"], ({ formDismissed }) => {
+        if (!formDismissed) {
+            consentModal.style.display = "flex";
+        }
+    });
+
+    openFormBtn.addEventListener("click", () => {
+        chrome.storage.sync.set({ formDismissed: true });
+        window.open("https://seu-google-forms-aqui.com", "_blank");
+        consentModal.style.display = "none";
+    });
+
+    dismissBtn.addEventListener("click", () => {
+        chrome.storage.sync.set({ formDismissed: true });
+        consentModal.style.display = "none";
+    });
+});
+
 document.getElementById('startScraping').addEventListener('click', () => {
     const spinner = document.getElementById('spinner');
     spinner.style.display = 'block';

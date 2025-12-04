@@ -59,6 +59,37 @@
     </style>
 </head>
 <body>
+    <body>
+    <div id="consentModal" style="
+        position: fixed; 
+        top: 0; left: 0; right: 0; bottom: 0; 
+        background: rgba(0,0,0,0.6); 
+        display: none; 
+        justify-content: center; 
+        align-items: center;
+        padding: 20px;
+    ">
+        <div style="
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            max-width: 320px; 
+            text-align: center;
+        ">
+            <h3>Ajude a melhorar a extensão!</h3>
+            <p>Você pode responder um formulário rápido do Google (opcional).</p>
+
+            <button id="openForm"
+                style="padding:10px 20px; margin: 10px; background:#4CAF50; color:white; border:none; border-radius:5px; cursor:pointer;">
+                Responder formulário
+            </button>
+
+            <button id="dismissForm"
+                style="padding:10px 20px; margin: 10px; background:#888; color:white; border:none; border-radius:5px; cursor:pointer;">
+                Agora não
+            </button>
+        </div>
+    </div>
     <button id="startScraping">Gerar Relatório</button>
     <div id="spinner" class="spinner"></div>
     <div id="agenda"></div>
