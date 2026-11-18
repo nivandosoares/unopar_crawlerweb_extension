@@ -1,3 +1,13 @@
+# Extensão Unopar
+
+Extensão de navegador para consultar dados acadêmicos no portal da universidade.
+
+**Arquivos principais**
+
+- [manifest.json](<manifest.json>)
+- [popup.html](<popup.html>)
+- [content.js](<content.js>)
+
 
 
 # Colaborar A+ <img src="icon-128.png" width=100>
